@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-body">
+        <div class="popup-overlay">
+        <div class="popup-content">
+            <h1 class="instructions-header">How To Play</h1>
+            <button id="button" class="instructions-closeicon" type="button" aria-label="Close">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
+            </button>
+            <h2 class="instructions-subheading">Guess the word in 6 tries</h2>
+            <section class="instructions-gameplay">
+                <ul class="instructions-explanation">
+                    <li>Each guess must be a real 5 letter word</li>
+                    <li>The color of the individual letter boxes will change to indicate how close you are to a correct guess</li>
+                </ul>
+                <div class="instructions-help">
+                    <h2>Examples</h2>
+                    <div id="ALONG" class="help-words">
+                        <div id="along-letterA" class="help-letters">A</div>
+                        <div id="along-letter" class="help-letters">L</div>
+                        <div id="along-letter" class="help-letters">O</div>
+                        <div id="along-letter" class="help-letters">N</div>
+                        <div id="along-letter" class="help-letters">G</div>
+                    </div>
+                    <p><strong>A</strong> is both in the word and in the correct place.</p>
+                    <div id="BRAVE" class="help-words">
+                        <div id="brave-letter" class="help-letters">B</div>
+                        <div id="brave-letterR" class="help-letters">R</div>
+                        <div id="brave-letter" class="help-letters">A</div>
+                        <div id="brave-letter" class="help-letters">V</div>
+                        <div id="brave-letter" class="help-letters">E</div>
+                    </div>
+                    <p><strong>R</strong> is in the word but is in the wrong place.</p>
+                    <div id="CLIPS" class="help-words">
+                        <div id="clips-letter" class="help-letters">C</div>
+                        <div id="clips-letter" class="help-letters">L</div>
+                        <div id="clips-letterI" class="help-letters">I</div>
+                        <div id="clips-letter" class="help-letters">P</div>
+                        <div id="clips-letter" class="help-letters">S</div>
+                    </div>
+                    <p><strong>I</strong> is not anywhere in the word.</p>
+                    <div class="instructions-reminder">
+                        <h2>A new word is released every day at Midnight. Come back every day to test your skills!</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+        <div class="game-container">
+            <header class="title">Word Game</header>
+            <div class="board-container">
+                <div class="board">
+                    <div class="rows" id="row-1">
+                        <div class="tile r1-1"></div>
+                        <div class="tile r1-2"></div>
+                        <div class="tile r1-3"></div>
+                        <div class="tile r1-4"></div>
+                        <div class="tile r1-5"></div>
+                    </div>
+                    <div class="rows" id="row-2">
+                        <div class="tile r2-1"></div>
+                        <div class="tile r2-2"></div>
+                        <div class="tile r2-3"></div>
+                        <div class="tile r2-4"></div>
+                        <div class="tile r2-5"></div>
+                    </div>
+                    <div class="rows" id="row-3">
+                        <div class="tile r3-1"></div>
+                        <div class="tile r3-2"></div>
+                        <div class="tile r3-3"></div>
+                        <div class="tile r3-4"></div>
+                        <div class="tile r3-5"></div>
+                    </div>
+                    <div class="rows" id="row-4">
+                        <div class="tile r4-1"></div>
+                        <div class="tile r4-2"></div>
+                        <div class="tile r4-3"></div>
+                        <div class="tile r4-4"></div>
+                        <div class="tile r4-5"></div>
+                    </div>
+                    <div class="rows" id="row-5">
+                        <div class="tile r5-1"></div>
+                        <div class="tile r5-2"></div>
+                        <div class="tile r5-3"></div>
+                        <div class="tile r5-4"></div>
+                        <div class="tile r5-5"></div>
+                    </div>
+                    <div class="rows" id="row-6">
+                        <div class="tile r6-1"></div>
+                        <div class="tile r6-2"></div>
+                        <div class="tile r6-3"></div>
+                        <div class="tile r6-4"></div>
+                        <div class="tile r6-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
