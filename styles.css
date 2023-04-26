@@ -131,15 +131,15 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 90%;
+    max-height: 90%;
     overflow: auto;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    font-family: 'Lilita One', cursive;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Lilita One', cursive;
+    font-family: 'Open Sans', sans-serif; */
   }
 
   .popup-inner h1 {
@@ -148,11 +148,13 @@ body {
   }
 
   .instructions-closeicon {
+
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 1.5em;
     cursor: pointer;
+    width: 40px;
   }
 
   .instructions-closeicon:hover {
@@ -238,4 +240,8 @@ strong {
 li {
     font-size: 20px;
     padding-bottom: 10px;
+}
+
+#button {
+  font-family: 'Sigmar', cursive;
 }
